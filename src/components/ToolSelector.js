@@ -15,11 +15,11 @@ export default function ToolBox(props) {
 
   const handleClick = e => {
     e.preventDefault();
-    props.setActiveTool(e.target.name)
-  }
+    props.setActiveTool(e.target.name);
+  };
 
   return (
-    <div className="tool-box">
+    <div className="tool-box box">
       <button
         style={{
           background: isActive("pencil"),
