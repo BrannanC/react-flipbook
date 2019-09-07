@@ -276,7 +276,7 @@ class Canvas extends React.Component {
           </div>
           <div className="img-wrapper">
             <h3>Previous Frame:</h3>
-            <img alt="" src={this.state.prevFrame} />
+            {this.state.prevFrame && <img alt="" src={this.state.prevFrame} />}
           </div>
           {this.state.isPlaying && (
             <div
