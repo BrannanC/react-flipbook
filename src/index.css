@@ -1,14 +1,175 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
 }
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+h3 {
+  margin-top: 0;
+}
+.App-logo {
+  -webkit-animation: App-logo-spin 20s linear infinite;
+  animation: App-logo-spin 20s linear infinite;
+  height: 40vmin;
+  pointer-events: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+.App-link {
+  color: #61dafb;
+}
+canvas {
+  position: absolute;
+}
+canvas,
+img {
+  border: 1px solid #000;
+}
+label {
+  font-size: 14px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  outline: none;
+  font-size: 12px;
+  padding: 5px;
+  margin: 5px 5px 0 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+button:hover {
+  background-color: #4281a4;
+  color: #fff;
+  cursor: pointer;
+}
+.settings-box {
+  width: 150px;
+  margin: 20px;
+}
+.box-wide {
+  margin: 20px 20px 20px 0;
+  display: flex;
+}
+.box {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: -2px 0 5px 0 #e5e5e5, 2px 2px 5px 0 #e5e5e5;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.tool-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0 20px 20px;
+  width: 50px;
+}
+.tool-button {
+  box-sizing: border-box;
+  outline: none;
+  font-size: 15px;
+  height: auto;
+  width: 40px;
+  padding: 10px;
+  margin: 0 0 5px;
+  cursor: pointer;
+}
+.icon-wrapper {
+  pointer-events: none;
+}
+.color-settings {
+  position: relative;
+  height: 96px;
+}
+.color-settings p {
+  margin: 0 0 5px;
+  padding: 3px 0;
+  border-bottom: 1px dotted #000;
+}
+.color-selector {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  border: 1px solid #000;
+  display: block;
+  cursor: pointer;
+  z-index: 1;
+}
+.color-selector.primary {
+  left: 30px;
+  bottom: 26px;
+}
+.color-selector.secondary {
+  left: 52px;
+  bottom: 10px;
+}
+.color-switcher {
+  position: absolute;
+  left: 77px;
+  bottom: 43px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.tool-settings {
+  margin-bottom: 10px;
+}
+.tool-settings p {
+  margin: 0 0 5px;
+  padding: 3px 0;
+  border-bottom: 1px dotted #000;
+}
+.tool-settings label {
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+.width-picker {
+  margin: 0 0 6px;
+  padding: 3px 0;
+  width: 35%;
+}
+.opacity-slider {
+  margin-top: 3px;
+  width: 80%;
+}
+.opacity-picker {
+  padding: 3px 0;
+  width: 35%;
+}
+.img-wrapper {
+  width: 202px;
+  margin: 0 15px;
+}
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.ec233e03.chunk.css.map */

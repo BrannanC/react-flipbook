@@ -1,30 +1,3 @@
-.App {
-  display: flex;
-  flex-wrap: wrap;
-  width: 900px;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 canvas {
   border: 1px solid black;
   position: absolute;
@@ -37,12 +10,45 @@ img {
 label {
   font-size: 14px;
 }
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  outline: none;
+  font-size: 12px;
+  padding: 5px;
+  margin: 5px 5px 0 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+button:hover {
+  background-color: #4281a4;
+  color: #fff;
+  cursor: pointer;
+}
 
 .settings-box {
   width: 150px;
   margin: 20px;
 }
-
+.box-wide {
+  margin: 20px 20px 20px 0;
+  display: flex;
+}
+.box {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  box-shadow: -2px 0px 5px 0px #e5e5e5, 2px 2px 5px 0px #e5e5e5;
+  padding: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
 .tool-box {
   display: flex;
   flex-wrap: wrap;
@@ -53,8 +59,14 @@ label {
 }
 
 .tool-button {
-  height: 40px;
+  box-sizing: border-box;
   outline: none;
+  font-size: 15px;
+  height: auto;
+  width: 40px;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  cursor: pointer;
 }
 
 .icon-wrapper {
@@ -130,4 +142,32 @@ label {
 .opacity-picker {
   padding: 3px 0;
   width: 35%;
+}
+
+.img-wrapper {
+  width: 202px;
+  margin: 0 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.player {
+  position: absolute;
+  left: calc(50% - 95vh / 2);
+  top: 20px;
+  width: 95vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+
+.player img {
+  width: 60%;
+  max-height: 80vh;
+  height: auto;
+  margin: 20px;
 }
